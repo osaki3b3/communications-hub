@@ -1,0 +1,17 @@
+/* Reset */
+@import 'tailwindcss/base';
+@import 'reset';
+
+/* Components */
+@import 'tailwindcss/components';
+@import 'buttons';
+@import 'form';
+
+/* Utilities */
+@import 'tailwindcss/utilities';
+
+/* VUE JS DATE PICKER */
+@import 'vue-date-pick/dist/vueDatePick.css';
+
+/* Tail Select */
+@import 'tail.select.js/css/tail.select.css';

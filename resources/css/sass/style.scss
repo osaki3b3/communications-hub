@@ -1,0 +1,2319 @@
+/*
+@import // if needed import to modularize.
+*/
+
+
+
+// SIDEBAR 
+
+#main-menu {
+
+    &>.sidebar_option {
+        border-left:4px solid white;
+        &:hover{
+            border-left:4px solid #1DA1F2;
+            color:#1DA1F2;
+            background-color: #f4f8fb;
+        }
+        
+    }
+
+    .active {
+        border-left:4px solid #1DA1F2;
+        color:#1DA1F2;
+        background-color: #f4f8fb;
+    }
+
+
+}
+
+// HOVER FONT
+
+.hover_font_semibold:hover {
+
+    font-weight: 600;
+
+}
+
+.hover_font_bold:hover {
+
+    font-weight: bold;
+
+}
+
+// FONT SIZE 
+
+.text_xxs {
+
+    font-size: 10px;
+
+}
+
+.text_xm {
+
+    font-size: 13px;
+
+}
+
+@media only screen and (min-width: 1536px) {
+
+    .dashboard_cards_text {
+
+        font-size: 16px;
+    
+    }
+
+}
+
+
+
+
+// GLOBALS  
+
+textarea {
+
+    resize: none;
+
+}
+
+
+// FONT
+
+* {
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+
+}
+
+// BORDER COLORS
+
+.border_color_gray {
+
+    border-color: #c5c8cc;
+
+}
+
+.border_color_gray_1 {
+
+    border-color: #b3b3b3;
+
+}
+
+
+// BACKGROUNDS COLOR 
+
+.background_color_1 {
+
+    background-color: #f9fafc;
+
+}
+
+.buttons_color {
+
+    background-color: #1DA1F2;
+
+}
+
+.buttons_color_hover:hover {
+
+    background-color: #1DA1F2;
+
+}
+
+.buttons_color_hover_2:hover {
+
+    background-color: #1b8fd7;
+
+}
+
+.sms_bg-color {
+
+    background-color: #c5c8cc;
+
+}
+
+// PAGINATION BG COLOR 
+
+.pagination_bg_color_1 {
+
+    background-color: #f3f5f9;
+
+}
+
+// TEXT COLORS 
+
+.title-text-color {
+
+    color: #1DA1F2;
+
+}
+
+.single_text_color {
+
+    color: #5ec9f5;
+
+}
+
+.single_text_color__2 {
+
+    color: #495e7e;
+
+}
+
+.single_text_color__3 {
+
+    color: #3f526f;
+
+}
+
+.single_text_color__4 {
+
+    color: #94b7e4;
+
+}
+
+.single_text_color__5 {
+
+    color: #367ab7;
+
+}
+
+.single_text_color__6 {
+
+    color: #7b7b7a;
+
+}
+
+.single_text_color__7 {
+
+    color: #3e3f41;
+
+}
+
+.single_text_color__8 {
+
+    color: #2aa7ee;
+
+}
+
+.single_text_color__9 {
+
+    color: #3c88ce;
+
+}
+
+.single_text_color__10 {
+
+    color: #9daee0;
+
+}
+
+.single_text_color__11 {
+
+    color: #b3b3b3;
+
+}
+
+.sidebar_text {
+
+    color: #888888;
+
+}
+
+
+.input_placeholder_color::placeholder {
+
+    color: #94b7e4;
+
+}
+
+
+// Breadcrum
+
+.breadcrum {
+    background-color: #888888;
+    height: 1.3px;
+    margin: 5px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    .breadcrum {
+        height: 13px;
+        margin: auto 0px;
+        width: 1.4px  ;
+    }
+}
+
+.breadcrum_pagination {
+    border-left: 2px solid #3e536f;
+    margin: 5px 0px;
+}
+
+@media only screen and (min-width: 640px) {
+    .breadcrum_pagination {
+        height: 13px;
+        margin: auto 0px;
+        width: 1px;
+    }
+}
+
+
+
+
+// Tabs         
+
+.tab_selected {
+
+    font-weight: 600;
+
+}
+
+.tab_selected div {
+
+    border-top: 2.3px solid #1D4ED8;
+    margin-top: 9px;
+    border-radius: 100px 100px 0 0;
+    
+}
+
+.tab_selected__2 {
+
+    font-weight: 600;
+    
+}
+
+.tab_selected__2 div {
+
+    border-top: 2.3px solid #2aa7ee;
+    margin-top: 11px;
+    border-radius: 100px 100px 0 0;
+    
+}
+
+.gray-line {
+
+    border-bottom: 1px solid #D1D5DB;
+
+}
+
+// Display
+
+@media only screen and ( min-width: 1024px ) {
+    .lg_d_initial {
+
+        display: initial;
+    
+    }
+}
+
+.d_initial {
+
+    display: initial;
+
+}
+
+// PAGINATION
+
+.pagination_prev {
+
+    position: relative;
+    text-align: left;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.pagination_prev {
+
+    .pagination_prev_icon {
+
+        transform: rotate(135deg);
+
+    }
+
+}
+
+.pagination_next {
+
+    position: relative;
+    text-align: left;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.pagination_next {
+
+    .pagination_next_icon {
+
+        transform: rotate(318deg);
+
+    }
+
+}
+
+.pagination_next:hover::before {
+
+    border-color: rgba(71, 85, 105, var(--tw-text-opacity));
+
+}
+
+.pagination_prev:hover::before {
+
+    border-color: rgba(71, 85, 105, var(--tw-text-opacity));
+
+}
+
+.pagination-select {
+    background-color: #f1f6f9;
+}
+
+.pagination_line {
+
+    background-color: #f1f6f9;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 75px;
+
+}
+
+
+// OUTBOX TABLE ICONS 
+
+.keywords-plus-icon {
+
+    position: relative;
+    border: 1px solid lightgray;
+    height: 20px;
+    width: 20px;
+    margin: 5px 15px 0 10px;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    
+
+    .icon {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1px;
+        padding-left: 1px;
+        position: relative;
+
+    }
+    
+    .icon::after {
+
+        content: "";
+        display: block;
+        height: 1px;
+        width: 13px;
+        border-color: #89b0e4;
+        border-width: 2px 0 0 0;
+        position: absolute;
+
+    }
+    
+    .icon::before {
+
+        content: "";
+        display: block;
+        width: 1px;
+        height: 13px;
+        border-color: #89b0e4;
+        border-width: 0 2px 0 0;
+        position: absolute;
+
+    }
+
+}
+
+
+
+// OUTBOX PAGINATION
+
+.outbox_pagination_next {
+
+    position: relative;
+    width: 50px;
+    text-align: left;
+    color: #bfd2e4;
+    padding: 5px 10px;
+    margin-top: 5px;
+
+}
+
+.outbox_pagination_prev {
+
+    position: relative;
+    width: 50px;
+    text-align: right;
+    color: #bfd2e4;
+    padding: 5px 10px;
+    margin-top: 5px;
+
+}
+
+.outbox_pagination_next::before {
+
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 9px;
+    height: 9px;
+    transform: rotate(318deg);
+    bottom: 7px;
+    /* top: 0; */
+    border-width: 0 3px 3px 0;
+
+}
+
+.outbox_pagination_prev::before {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    transform: rotate(135deg);
+    bottom: 7px;
+    /* top: 0; */
+    border-width: 0 3px 3px 0;
+
+}
+
+.outbox_page_number {
+
+    background-color: #f1f6f9;
+
+}
+
+
+// BUTTONS
+
+
+.new-sing-up {
+
+    background-color: #1da1f2;
+
+}
+
+
+// CHECKBOX TOGGLE
+
+.checkbox_toggle {
+    display: inline-block;
+    height: 19px;
+    position: relative;
+    width: 32px;
+}
+.checkbox_toggle input {
+    display: none;
+}
+.checkbox_slider {
+    background-color: #c5dae2;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    width: 32px;
+}
+.checkbox_slider::before {
+    background-color: #fff;
+    bottom: 2px;
+    content: "";
+    height: 15px;
+    left: 2px;
+    position: absolute;
+    transition: 0.4s;
+    width: 15px;
+}
+.checkbox_toggle input:checked + .checkbox_slider {
+    background-color: #73c1e0;
+}
+.checkbox_toggle input:checked + .checkbox_slider:before {
+    transform: translateX(13px);
+}
+.checkbox_slider.slider-round {
+    border-radius: 34px;
+}
+.checkbox_slider.slider-round::before {
+    border-radius: 50%;
+}
+
+
+// CHECKBOX PLAN PAGE
+
+.plan_checkbox_container input {
+    
+    display: none;
+    width: fit-content;
+
+}
+
+.plan_checkbox_span {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.plan_checkbox_span::after {
+
+    content: "";
+    left: 40%;
+    top: 20%;
+    width: 30%;
+    height: 50%;
+    border: 3px solid #ffffff;
+    border-width: 0px 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+
+}
+
+.plan_checkbox_container input:checked + .plan_checkbox_span {
+    
+    background-color: #424242;
+
+}
+
+
+.control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 41px;
+    margin-bottom: 5px;
+    padding-top: 0px;
+    cursor: pointer;
+    font-size: 15px;
+}
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+    border-radius: 0px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #2aa1c0;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #0e6647;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+.control-checkbox .control_indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: -1.3rem;
+    margin-top: -1.3rem;
+    background: #2aa1c0;
+    border-radius: 3rem;
+    opacity: 0.6;
+    z-index: 99999;
+    transform: scale(0);
+}
+
+
+
+// SELECTS BORDER   
+
+.select_border {
+
+    border: 1px solid #c5dae2;
+    border-radius: 4px;
+
+}
+
+
+// NEW MESSAGE CLOSE ICON
+
+.new-message-close-icon {
+
+    position: relative;
+
+    .first_line {
+
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        height: 100%;
+        display: block;
+        transform: rotate(133deg);
+
+    }
+
+    .second_line {
+
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        height: 100%;
+        display: block;
+        transform: rotate(46deg);
+
+    }
+
+}
+
+
+// INTEGRATIONS CARDS PROFILE BACKGROUND
+
+.profile_background {
+
+    background-color: #d9d9d9;
+
+}
+
+
+// MEDIA BACKGROUNDS 
+
+
+.boxes_background {
+
+    background-color: #edf3f8;
+
+}
+
+
+// SHADOW 
+
+.header_shadow {
+
+    box-shadow: -1px 1px 6px rgb(223, 228, 232) ;
+
+}
+
+
+
+// NEW GROUP TEXT BOXES
+
+.new_group_boxes_width {
+
+    width: 94px;
+    height: 94px;
+
+}
+
+
+// CUSTOM RADIO 
+
+
+.custom__radio {
+
+    display: flex;
+    align-items: center;
+    width: fit-content;
+
+}
+
+.custom__radio input[type="radio"] {
+
+    display: none;
+
+}
+
+.custom__radio .radio_custom_marker {
+
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #d5d7da;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-right: 10px;
+
+}
+
+.custom__radio input[type="radio"]:checked~.radio_custom_marker {
+
+    border-color: #367bb7;
+    border: 2px solid #367bb7;
+
+}
+
+.custom__radio input[type="radio"]:checked~.radio_custom_marker::after {
+
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #367bb7;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 1.5px;
+    left: 1.5px;
+}
+
+
+
+// SCHEDULE MESSAGE LATER CALENDAR
+
+.schedule_for_later_calendar {
+
+    height: 725px;
+    width: 480px;
+    background-color: white;
+    left: 25%;
+    bottom: 0;
+    box-shadow: -1px 2px 8px rgb(221, 225, 229);
+
+}
+
+// OUT BOX CALENDAR
+
+.calendar{
+  display:inline-grid;
+  justify-content:center;
+  align-items:center;
+  background:#fff;
+  border-radius:5px;
+  
+  .month{
+    
+    .calendar_prev {
+        width:5px;
+        height:5px;
+        transition-duration:.2s;
+        position:relative;
+    }
+    
+    .calendar_next {
+        width:5px;
+        height:5px;
+        transition-duration:.2s;
+        position:relative;
+    }
+    
+    .calendar_prev::after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-width: 0 1px 1px 0;
+        display: block;
+        transform: rotate(135deg);
+        position: absolute;
+        top: -3px;
+        right: 8px;
+        border-color: black;
+    }
+    
+    .calendar_next::after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-width: 1px 0 0 1px;
+        display: block;
+        transform: rotate(136deg);
+        position: absolute;
+        top: -3px;
+        right: 0;
+        border-color: black;
+    }
+  }
+  
+  .days{
+    display: grid;
+    grid-template-columns: repeat(7, .5fr);
+    margin-bottom:15px;
+
+  }
+  
+  .dates{
+    display:grid;
+    grid-template-columns: repeat(7, .1fr);
+    
+    button{
+      cursor:pointer;
+      background:transparent;
+      justify-self:center;
+      align-self:center;
+      border-radius:50px;
+      transition-duration:.2s;
+      
+      &:first-child{
+        grid-column:4;
+      }
+      
+      &:hover{
+        background:#eee;
+      }
+      
+      &:focus{
+        background:#1d41f2;
+        color:#fff;
+        font-weight:600;
+      }
+    }
+  }
+}
+
+
+// DROPDOWN ARROWS COLORS
+
+.arrow_color_dark-gray {
+
+    border-color: #888888 !important;
+
+}
+
+
+// DROPDOWN ARROWS 
+
+.dropdown_full_arrow {
+
+    border-top-color: black;
+    border-right-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+    border-style: solid;
+    margin-bottom: -6px;
+
+}
+
+.dropdown_arrow {
+
+    // border-width: 0 3px 3px 0;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    display: block;
+    transform: rotate(45deg);
+
+}
+
+.dropdown_arrow_close {
+
+    border-width: 0 3px 3px 0;
+    display: block;
+    transform: rotate(225deg);
+    margin-top: 7px;
+
+}
+
+
+
+// CONTACTS CREATE NEW 
+
+.general_box_width {
+
+    width: 470px;
+    height: 750px;
+
+}
+
+
+// BACK ARROW 
+
+.back_arrow_2 {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .simple_arrow::after {
+        
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-width: 0 0 2px 2px;
+        transform: rotate(45deg);
+        display: block;
+        border-color: #3f526f;
+
+    }
+
+    .extend_arrow::after {
+        
+        content: "";
+        width: 13px;
+        height: 2px;
+        border-bottom: 2px solid #3f526f;
+        display: block;
+        margin-left: -8.5px;
+        margin-bottom: -1px;
+
+    }
+
+}
+
+
+// PLUS ICON HEADER
+
+.plus_icon {
+
+    font-size: 10px;
+    line-height: 0.5em;
+    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1da1f2;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+
+}
+
+.plus_icon::before {
+    display: block;
+    content: '+';
+  }
+
+// BORDERS WIDTH
+
+.border_1-5 {
+
+    border-width: 1.5px;
+
+}
+
+.border_2-5 {
+
+    border-width: 2.5px;
+
+}
+
+.border_3 {
+
+    border-width: 3px;
+
+}
+
+.border_5 {
+
+    border-width: 5px;
+
+}
+
+.border_6 {
+
+    border-width: 6px;
+
+}
+
+.border_7 {
+
+    border-width: 7px;
+
+}
+
+
+
+// WIDTH 
+
+
+.w_4-5 {
+
+    width: 1.125rem;
+
+}
+
+// HEIGHT 
+
+.h_4-5 {
+
+    height: 1.125rem;
+
+}
+
+// CARDS SHADOW
+
+.cards_shadow {
+
+    box-shadow: 0px .8px 7px rgb(221, 225, 229);
+
+}
+
+
+// Contacts Clear filter
+
+.contacts_clear_filters {
+
+    width: 900px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.a2p_page {
+
+    position: relative;
+    padding: 0 120px;
+
+    input[type="radio"] {
+        width: 16px;
+        height: 16px;
+        appearance: none;
+        border: 2px solid rgba(0,0,0,.125);
+        transition: 0.2s all linear;
+        margin-bottom: -5px;
+        border-radius: 50%;
+    }
+
+    input[type="radio"]:checked {
+        border: 5px solid rgb(44, 44, 202);
+    }
+
+    input[type="text"], input[type="number"], input[type="email"] {
+        padding: 0 9px;
+        height: 30px;
+        border: 1.5px solid gray;
+        border-radius: 5px;
+    }
+
+    select {
+        border-radius: 5px;
+        padding: 0px 10px !important;
+        border: 1.5px solid gray !important;
+        width: 100%;
+        height: 30px !important;
+        padding-right: 5px;
+        // background-image: url('../images/validate-number-select-arrow.png');
+
+        background-size: 8px;
+        background-repeat: no-repeat;
+        appearance: none;
+        background-position: 95% center;
+        padding-right: 27px;
+
+        appearance: none;
+    }
+
+    .select-dropdown::after {
+        display: none !important;
+    }
+
+    .input-exclamation-mark {
+        display: flex;
+        align-items: center;
+
+        .exclamation-mark__content {
+            padding: 5px 5px;
+            border: 1.5px solid gray !important;
+            width: 90%;
+            border-radius: 5px 0 0 5px;
+            border-right: 0;
+        }
+    
+        .exclamation-mark__icon {
+            background-color: lightgray;
+            color: blue;
+            width: 30px;
+            height: 30px;
+            border: 1.5px solid gray;
+            border-left: 1px solid rgba(128, 128, 128, 0.279);
+            margin-bottom: 0;
+            text-align: center;
+            display: flex;
+            border-radius: 0 5px 5px 0;
+
+            span {
+                border-radius: 50px;
+                border: 1px solid blue;
+                color: blue;
+                padding: 0px 5px;
+                font-size: 8px;
+                font-weight: 800;
+                margin-right: 6px;
+                margin: auto;
+            }
+
+        }
+    }
+
+    
+
+    .title {
+        font-weight: 800;
+    }
+
+    .title-section .title {
+        font-size: 17px;
+    }
+
+    .title-section .text {
+        font-size: 12px;
+    }
+
+    .subtitle {
+        font-weight: bold;
+    }
+
+    .label-subtitle {
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    .notifications {
+        background-color: rgba(121, 207, 236, 0.221);
+        padding: 15px 17px;
+        border-bottom: 2px solid rgb(94, 94, 255);
+        display: flex;
+        align-items: top;
+    }
+
+    .notifications p {
+        margin: 0;
+
+        .notification-mark {
+            border-radius: 50px;
+            background-color: blue;
+            color: white;
+            padding: 0.5px 6.5px;
+            font-size: 9px;
+            font-weight: bold;
+            margin-right: 6px;
+            height: 16px;
+            width: 20px;
+        }
+    }
+
+    
+
+    /* ID */
+
+    #profile__url::placeholder {
+        font-style: italic ;
+    }
+
+    /* Content */
+
+
+    #accordion-form {
+
+        .a2p_title {
+
+            padding-top: 50px;
+
+            h2 {
+
+                font-size: 2rem;
+                margin-bottom: 15px;
+
+            }
+
+            p { 
+
+                margin-top: 0;
+                margin-bottom: 1rem;
+
+            }
+
+        }
+
+        .container {
+
+            form {
+
+                position: relative;
+
+                .accordion {
+
+                    .card {
+
+                        margin-bottom: 30px;
+                        border: 0;
+                        background-color: white;
+                        border-radius: 0.25rem;
+
+                        .card-header {
+
+                            border: 0;
+                            background-color: rgba(0,0,0,.03);  
+
+                            h2 {
+
+                                margin-top: 0;
+
+                                p {
+
+                                    color: #000000;
+                                    font-weight: bold;
+                                    font-size: 17px;
+                                    border-radius: 0;
+                                    border: 2px solid rgba(0,0,0,.125);
+                                    border-bottom: 0;
+                                    background-color: rgba(0,0,0,.03);
+                                    padding: 6px 12px;
+                                    margin-bottom: 0;
+
+                                }
+
+                                .legal_document_example {
+
+                                    a {
+
+                                        color: #0056b3;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                        margin: 0 8px;
+
+                                    }
+
+                                }
+
+                                .collapsed  {
+
+                                    background-color: #ffffff !important;
+                                    border: 2px solid rgba(0,0,0,.125);
+
+                                }
+
+                            }
+
+                        }
+
+                        .card-body {
+
+                            border: 2px solid rgba(0,0,0,.125);
+                            border-top: 0;
+                            margin-top: -1px;
+                            padding: 1.25rem;
+
+                            .accordion-content {
+
+                                padding-top: 20px;
+
+                            }
+
+                            .general-information {
+
+
+                                .grid {
+
+                                    div {
+
+                                        input {
+
+                                            border: 1.5px solid gray;
+                                            font-size: 13px;
+                                            margin-bottom: 7px;
+
+                                        }
+
+                                        p {
+
+                                            font-size: 12px;
+                                            letter-spacing: 0.5px;
+
+                                        }
+
+                                        label {
+
+                                            font-size: 13px
+                                        
+                                        }
+
+                                        .legal-business {
+
+                                            margin-left: 10px;
+                                        
+                                        }
+
+                                    }
+
+                                }
+                                
+                            }
+
+                            .business-information {
+
+                                font-size: 13px;
+
+                                div {
+
+                                    .title {
+
+                                        font-weight: bold;
+                                        font-size: 12px;
+                                    
+                                    }
+
+                                    label {
+
+                                        display: block;
+                                        font-weight: 400;
+
+                                    }
+
+                                }
+
+                                .select-content {
+
+                                    div {
+
+                                        .title {
+
+                                            font-weight: bold;
+                                            font-size: 12px;
+                                            margin-bottom: 3px;
+                                            margin-top: 23px;
+                                            padding-left: 3px;
+                                            display: block;
+                                        
+                                        }
+
+                                        .text{
+
+                                            font-weight: 200;
+                                            font-size: 12px;
+
+                                        }
+
+                                    }
+
+                                }
+                                
+                                .business-regions {
+
+                                    margin-top: 30px;
+
+                                    .title {
+                                    
+                                        font-size: 12px;
+                                        font-weight: bold;
+                                    
+                                    }
+
+                                    label {
+
+                                        font-size: 12px;
+
+                                        input {
+
+                                            border: 1.5px solid gray;
+                                            font-size: 13px;
+                                            opacity: 1;
+                                            border-radius: 5px;
+                                        
+                                        }
+
+                                    }
+
+                                }
+
+                                .business-website{
+
+                                    margin-top: 50px;
+
+                                    div {
+
+                                        .title{
+
+                                            font-size: 12px;
+                                            font-weight: bold;
+
+                                        }
+
+                                        input {
+
+                                            border-radius: 5px;
+                                            padding: 5px 9px;
+                                            border: 1.5px solid gray;
+
+                                        }
+
+                                    }
+
+                                }
+
+                                .form-buttons {
+
+                                    margin-top: 30px;
+
+                                }
+
+                            }
+
+                            .business-address {
+                                margin-top: 50PX;
+
+                                .title-section {
+
+                                    .title {
+
+                                        font-size: 17px !important;
+    
+                                    }
+
+                                    .text {
+
+                                        background-color: rgba(173, 216, 230, 0.233);
+                                        padding: 15px 17px;
+                                        border-bottom: 2px solid blue;
+
+                                        span {
+
+                                            border-radius: 50px;
+                                            background-color: blue;
+                                            color: white;
+                                            padding: 2px 6.5px;
+                                            font-size: 9px;
+                                            font-weight: bold;
+                                            margin-right: 6px;
+
+                                        }
+
+                                    }
+
+                                }
+
+                                .grid {
+
+                                    div {
+
+                                        .business-address__content {
+
+                                            margin-bottom: 20px;
+                                            margin-top: 10px;
+
+                                            label {
+
+                                                font-weight: bold;
+
+                                            }
+
+                                            input {
+
+                                                width: 100%;
+                                                height: 30px;
+                                                border-radius: 5px;
+                                                border: 1.5px solid gray;
+
+                                            }
+
+                                            p {
+
+                                                color: gray;
+                                                
+                                            }
+                                            
+                                        }
+
+                                        .buttons-form {
+
+                                            text-align: right;
+
+                                            button {
+
+                                                font-weight: bold;
+                                                padding: 6px 10px 5px;
+                                                border-radius: 3px;
+
+                                            }
+
+                                            .back-button {
+
+                                                background-color: white;
+                                                border: 1px solid gray;
+                                                color: black;
+
+                                            }
+
+                                            .continue-button {
+
+                                                color: white;
+                                                background-color: rgb(66, 66, 255);
+                                                border: 1px solid rgb(66, 66, 255);
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            } 
+
+                            .people-contact {
+
+                                .title {
+
+                                    font-size: 15px;
+                                    font-weight: 800;
+                                    margin-bottom: 25px;
+
+                                }
+
+                                .text {
+
+                                    font-size: 12px;
+                                    margin-bottom: 25px;
+                                    
+                                }
+
+                                .grid {
+
+                                    div {
+
+                                        label {
+
+                                            font-size: 12px;
+                                            font-weight: bold;
+                                            margin-top: 25px;
+                                            margin-bottom: 5px;
+                                            display: block;
+
+                                        }
+
+                                        input {
+
+                                            border-radius: 5px;
+                                            padding: 5px 5px;
+                                            border: 1.5px solid gray;
+                                            width: 100%;
+                                            
+                                        }
+
+                                    }
+
+                                }
+
+                                .checkbox {
+
+                                    margin-top: 30px;
+                                    margin-bottom: 5px;
+
+                                    label {
+
+                                        font-size: 12px;
+
+                                    }
+
+                                    input {
+
+                                        border: 1.5px solid gray;
+                                        font-size: 13px;
+                                        opacity: 1;
+                                        border-radius: 5px;
+                                        
+                                    }
+
+                                }
+                                
+                            }
+
+                            .campaign-case {
+
+                                .grid {
+
+                                    .inputs-radio {
+
+                                        .title {
+
+                                            font-weight: 700 !important;
+
+                                        }
+
+                                        .low-volume {
+
+                                            label {
+
+                                                font-weight: 700;
+                                                display: flex;
+
+                                                input {
+
+                                                    margin: 0;
+                                                    margin-right: 5px;
+
+                                                }
+
+                                                span {
+
+                                                    color: rgb(15 35 69 / 50%);
+                                                    margin-left: 10px;
+
+                                                }
+
+                                            }
+
+                                            p {
+
+                                                padding-left: 26px;
+
+                                            }
+
+
+                                        }
+
+                                        .standard {
+
+                                            label {
+
+                                                font-weight: 700;
+                                                display: flex;
+
+
+                                                input {
+
+                                                    margin: 0;
+                                                    margin-right: 5px;
+
+                                                }
+
+                                                span {
+
+                                                    color: rgb(15 35 69 / 50%);
+                                                    margin-left: 10px;
+
+                                                }
+
+                                            }
+
+                                            p {
+
+                                                padding-left: 26px;
+                                                
+                                            }
+                                            
+                                        }
+
+                                    }
+
+                                    .inputs-content {
+
+                                        margin-bottom: 15px;
+
+                                        p {
+
+                                            font-weight: 400;
+                                            letter-spacing: 0.5px;
+
+                                        }
+
+                                        input {
+
+                                            width: 95%;
+                                            height: 30px;
+                                            border-radius: 5px;
+                                            border: 1.5px solid gray;
+
+                                        }
+
+                                        textarea {
+
+                                            width: 97%;
+                                            height: 70px;
+                                            border-radius: 5px;
+                                            border: 1.5px solid gray;
+
+                                        }
+
+                                        a {
+
+                                            font-weight: bold;
+
+                                        }
+
+                                        .input-exclamation-mark {
+
+                                            .dropdown {
+
+                                                width: 90%;
+                                                height: 30px;
+
+                                                .dropdown-menu {
+
+                                                    width: 100%;
+
+                                                }
+
+                                            }
+
+                                            .tail-select {
+
+                                                width: 90%;
+
+                                                .select-dropdown {
+
+                                                    margin-top: 0;
+
+                                                    .dropdown-inner {
+
+                                                        padding-top: 0;
+
+                                                        .dropdown-optgroup {
+
+                                                            .optgroup-title {
+
+                                                                background-color: rgb(244, 244, 246);
+
+                                                                b {
+
+                                                                    font-weight: 700;
+                                                                    line-height: 1.2;
+                                                                    text-shadow: none;
+                                                                    letter-spacing: 0;
+                                                                    text-transform: none;
+                                                                    font-size: 14px;
+
+                                                                }
+                                                                
+                                                            }
+
+                                                            .dropdown-option {
+
+                                                                font-size: 13px;
+                                                                padding-bottom: 10px;
+                                                                padding-top: 10px;
+                                                                border-bottom: 1px solid rgb(228 227 227);
+                                                                margin-bottom: 0;
+
+                                                            }
+
+                                                        }
+
+                                                    }
+
+                                                }
+
+                                                .select-label {
+
+                                                    border-radius: 5px 0 0 5px;
+                                                    border: 1.5px solid gray;
+                                                    border-right: 0;
+
+                                                    .label-inner {
+
+                                                        padding: 4.5px 10px;
+                                                        font-size: 13px;
+
+                                                    }
+
+                                                }
+
+                                            }
+
+                                        }
+                                        
+                                    }
+
+                                }
+
+                            }
+
+                            .opt-in {
+
+                                .opt-in-keywords {
+
+                                    margin-bottom: 40px;
+
+                                    input {
+
+                                        width: 100%;
+                                        border-radius: 5px;
+                                        border: 1.5px solid gray;
+                                        padding: 20px 15px;
+                                        margin-bottom: 5px;
+
+                                    }
+
+                                    input::placeholder {
+
+                                        font-style: italic;
+
+                                    }
+
+                                    p {
+
+                                        padding-left: 3px;
+                                        margin-top: 8px;
+                                        max-width: 840px;
+                                        font-weight: 500;
+
+                                    }
+
+                                    
+
+                                }
+
+                                .opt-in-message {
+
+                                    p {
+
+                                        padding-left: 3px;
+                                        margin-top: 8px;
+                                        max-width: 840px;
+                                        font-weight: 500;
+
+                                        a {
+
+                                            font-weight: bold;
+
+                                        }
+
+                                    }
+
+                                    textarea {
+
+                                        width: 100%;
+                                        height: 90px;
+                                        border-radius: 5px;
+                                        border: 1.5px solid gray;
+                                        padding: 10px 15px;
+
+                                    }
+
+                                    textarea::placeholder {
+
+                                        font-style: italic;
+
+                                    }
+
+                                }
+
+                            }
+
+                            .upload-selected-files {
+
+                                display: flex;
+                                justify-content: space-around;
+
+                                .file-box {
+
+                                    text-align: center;
+
+                                    p {
+
+                                        font-size: 17px;
+                                        font-weight: 700;
+                                        
+                                    }
+
+                                    input {
+
+                                        width: 100%;
+                                        max-width: 215px;
+                                        margin-top: 20px;
+
+                                    }
+
+                                    input::-webkit-file-upload-button {
+
+                                        display: inline-block;
+                                        border-radius: 3px;
+                                        padding: 5px 8px;
+                                        outline: none;
+                                        white-space: nowrap;
+                                        -webkit-user-select: none;
+                                        cursor: pointer;
+                                        font-weight: 700;
+                                        font-size: 15px;
+                                        background-color: blue;
+                                        border: 1px solid blue;
+                                        border: none;
+                                        color: white;
+
+                                    }
+
+                                }
+
+                            }
+
+                            @media only screen and (max-width: 768px) {
+
+                                .upload-selected-files {
+
+                                    flex-direction: column;
+
+                                }
+                        
+                                .upload-selected-files {
+
+                                    .first-file {
+                                     
+                                        text-align: center;
+                                        margin-bottom: 40px;
+                                    
+                                    }
+
+                                } 
+
+                            }
+
+                            .privacity-policy{
+
+                                background-color: rgba(0,0,0,.03);
+                                padding: 20px 25px;
+
+                                p {
+
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    margin-bottom: 0;
+
+                                }
+
+                                label {
+
+                                    font-size: 12px;
+                                    display: flex;
+
+                                    input {
+
+                                        border: 1.5px solid gray;
+                                        font-size: 13px;
+                                        opacity: 1;
+                                        border-radius: 5px;
+                                        height: 100%;
+                                        margin-right: 8px;
+                                        margin-top: 0;
+
+                                    }
+
+                                }
+
+                                .text {
+
+                                    margin-top: 20px;
+                                    margin-left: 20px;
+
+                                    a {
+
+                                        text-decoration: underline;
+                                        font-weight: 800;
+                                        color: #007bff;
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+    .form-button__disabled {
+        background-color: #9595e2 !important;
+        cursor: no-drop;
+    }
+
+    .required-privacy__policy {
+        padding: 25px 10px;
+        margin-top: 25px;
+        background-color: red;
+        color: white;
+        font-weight: 600;
+    }
+
+    .error-text {
+        font-size: 13px !important;
+        color: red !important;
+    }
+
+    .error_border {
+
+        border-color: red !important;
+
+    }
+
+    .form-buttons-bg {
+        background-color: rgba(0,0,0,.125);
+        padding: 10px;
+    }
+
+    .form-buttons button {
+        padding: 10px 10px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .form-buttons .submit {
+        background-color: blue;
+        border: 1px solid blue;
+        border: none;
+        color: white;
+    }
+
+    .form-buttons .cancel {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+    }
+
+    .alert {
+
+        background-color: #f8d7da;
+        position: relative;
+
+        .close {
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            padding: 0.75rem 1.25rem;
+            color: inherit;
+
+            span {
+
+                font-size: 30px;
+                display: block;
+                color: #721c24;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+// Custom Date Picker
+
+:root {
+  --dark-body-bg: #232429;
+  --light-body-bg: #F5F7FB;
+
+  --dark-input: #323741;
+  --light-input: #ffffff;
+
+  --dark-border: #484D5A;
+  --light-border: #B8BCCB;
+
+  --dark-date-foreground: #FFFFFF;
+  --dark-inactive-fg: #636A78;
+  --dark-active-fg: #9CA0B1;
+  --dark-current-year: #3B414A;
+  --dark-current-year-fg: #B2B8C9;
+  --dark-selected: #1D5EFF;
+  --dark-hover: #2C437B;
+  --dark-arrows-bg: #B0B8CC;
+  --dark-arrows-fill: #333641;
+}
+
+
+
+.body {
+    height: 100vh;
+    background: var(--dark-body-bg);
+    font-family: Helvetica, sans-serif;
+
+
+    #date_picker {
+        width: 300px;
+        margin: 0 auto;
+        transform: scale(1.2);
+        position: relative;
+        top: 15%;
+      }
+      
+      #date_picker_input {
+        margin-bottom: 8px;
+      }
+      
+      label {
+        display: block;
+        color: #8A8F9F;
+        font-size: 1.02rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+      
+      #date {
+        color: var(--dark-date-foreground);
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+    
+      #date_picker_calendar {
+        min-height: fit-content;
+        box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+        overflow: hidden;
+        padding: 12px;
+    }
+    
+    #date, 
+    #date_picker_calendar {
+        border-radius: 15px;
+        background: var(--dark-input);
+        border: 2px solid var(--dark-border);
+        width: 100%;
+    }
+
+
+    #calendar_header {
+        width: 100%;
+        min-height: 30px;
+      /*   background: pink; */
+        margin-bottom: 8px;
+        color: var(--dark-date-foreground);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .cal-btn {
+        width: 20px;
+        height: 20px;
+        background: var(--dark-arrows-bg);
+        border: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 6px;
+      }
+      
+      .cal-btn img {
+        width: 42%;
+        height: 42%;
+      }
+      
+      .cal-btn.back img {
+        transform: rotate(90deg);
+      }
+      
+      .cal-btn.front img {
+        transform: rotate(-90deg);
+      }
+
+      #cal_days,
+#calendar_main {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+  color: var(--dark-inactive-fg);
+}
+
+#cal_days {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#calendar_main {
+  grid-template-rows: repeat(5, min(30px));
+}
+
+.cell_wrapper {
+/*   background: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+.current {
+  background: var(--dark-current-year);
+  color: var(--dark-current-year-fg);
+}
+
+.current:not(.active):hover {
+  background: var(--dark-hover);
+  color: var(--dark-date-foreground);
+  border: 2px solid var(--dark-selected);
+}
+
+.cal-btn:hover,
+.current:hover {
+  cursor: pointer;
+}
+
+.active {
+  background: var(--dark-selected);
+  color: var(--dark-date-foreground);
+}
+
+.inactive_indicator:after {
+/*   text-decoration: underline; */
+  content: '';
+  width: 3px;
+  height: 3px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+}
+    
+}
