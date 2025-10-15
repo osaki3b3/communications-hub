@@ -1,5 +1,5 @@
-# Livecomm V2
+# Communications Hub V. 0.1.1
 
-V2 of the Livecomm APPLICATION.
+Communications Hub - Connect to Twilio Services (SMS/MMS Outgoing & incoming Call services)
 
 [comment]: <> (This is a comment, it will not be included)
